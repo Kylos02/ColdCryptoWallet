@@ -104,10 +104,10 @@ Implement from scratch the **core cryptographic functions** of a cold wallet for
 
 ```bash
 # Clone this repository
-git clone [https://github.com/DanielGarcia654/ProyectoFinal_Criptografia.git](https://github.com/DanielGarcia654/ProyectoFinal_Criptografia.git)
+git clone "https://github.com/Kylos02/ColdCryptoWallet"
 
 # Navigate to the project directory
-cd ProyectoFinal
+cd ColdCryptoWallet
 
 # Install dependencies
 pip install cryptography customtkinter
