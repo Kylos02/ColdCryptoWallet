@@ -1,44 +1,44 @@
 <div align="center">
 
-# 🪙 Proyecto Final de Criptografía 
+# 🪙 Cryptography Final Project 
 
-### Facultad de Ingeniería UNAM | Semestre 2026-1
+### Faculty of Engineering UNAM | Semester 2026-1
 
 </div>
 
 ---
 
-## 📋 Descripción
+## 📋 Description
 
-Este es el **proyecto final** para la materia de **Criptografía** del semestre 2026-1.
+This is the **final project** for the **Cryptography** course of the 2026-1 semester.
 
-**Crypto-Wallet** es una implementación completa de una **billetera criptográfica fría (cold wallet)** para criptomonedas basadas en cuentas, desarrollada desde cero utilizando primitivas criptográficas fundamentales.
+**Crypto-Wallet** is a complete implementation of a **cold crypto wallet** for account-based cryptocurrencies, developed from scratch using fundamental cryptographic primitives.
 
-### ¿Qué es una Cold Wallet?
+### What is a Cold Wallet?
 
-Una billetera fría es un sistema de almacenamiento de criptomonedas que mantiene las llaves privadas completamente **offline y aisladas de la red**, maximizando la seguridad contra ataques remotos. A diferencia de las "hot wallets" conectadas permanentemente a internet, las cold wallets solo firman transacciones localmente, exportando únicamente el resultado firmado.
+A cold wallet is a cryptocurrency storage system that keeps private keys completely **offline and network-isolated**, maximizing security against remote attacks. Unlike "hot wallets" that are permanently connected to the internet, cold wallets only sign transactions locally, exporting only the signed result.
 
-### Características Principales
+### Main Features
 
-Este proyecto implementa las **primitivas criptográficas fundamentales** de una billetera profesional:
+This project implements the **fundamental cryptographic primitives** of a professional wallet:
 
-- 🔐 **Gestión Segura de Llaves**: Generación de pares Ed25519, almacenamiento encriptado con AES-256-GCM y derivación de claves mediante Argon2id
-- ✍️ **Firma Digital Determinista**: Canonicalización de transacciones en JSON y firma criptográfica verificable
-- ✅ **Verificación Completa**: Validación de firmas digitales, detección de ataques de replay y comprobación de integridad
-- 🪙 **Sistema de Direcciones**: Derivación de direcciones estilo Ethereum mediante SHA-256
-- 🧪 **Simulación Local**: Carpetas inbox/outbox que emulan el envío/recepción sin requerir blockchain real
+- 🔐 **Secure Key Management**: Ed25519 key pair generation, encrypted storage with AES-256-GCM, and key derivation using Argon2id
+- ✍️ **Deterministic Digital Signature**: JSON transaction canonicalization and verifiable cryptographic signing
+- ✅ **Complete Verification**: Digital signature validation, replay attack detection, and integrity checking
+- 🪙 **Address System**: Ethereum-style address derivation using SHA-256
+- 🧪 **Local Simulation**: Inbox/outbox folders that emulate sending/receiving without requiring a real blockchain
 
-### Enfoque del Proyecto
+### Project Approach
 
-El objetivo es dominar los **fundamentos criptográficos** mediante una implementación práctica que cumpla estándares de seguridad profesionales:
-- Sin frameworks de wallet predefinidos — implementación desde cero
-- Uso exclusivo de primitivas criptográficas auditadas (Ed25519, AES-256-GCM, Argon2id)
-- Manejo seguro de secretos en memoria y protección contra vulnerabilidades comunes
-- Suite completa de pruebas unitarias con vectores de prueba dorados
+The objective is to master **cryptographic fundamentals** through a practical implementation that meets professional security standards:
+- No predefined wallet frameworks — implemented from scratch
+- Exclusive use of audited cryptographic primitives (Ed25519, AES-256-GCM, Argon2id)
+- Secure handling of secrets in memory and protection against common vulnerabilities
+- Complete unit testing suite with golden test vectors
 
 ---
 
-## 👥 Equipo de Desarrollo
+## 👥 Development Team
 
 <table align="center">
   <tr>
@@ -66,107 +66,49 @@ El objetivo es dominar los **fundamentos criptográficos** mediante una implemen
 
 ---
 
-## 🎯 Objetivo del Proyecto
+## 🎯 Project Objective
 
-Implementar desde cero las **funciones criptográficas centrales** de una billetera fría (cold wallet) para una criptomoneda basada en cuentas. El proyecto incluye:
+Implement from scratch the **core cryptographic functions** of a cold wallet for an account-based cryptocurrency. The project includes:
 
-### Componentes Principales
+### Main Components
 
-- 🔑 **Almacenamiento Seguro de Llaves**  
-  Diseñar e implementar un sistema de almacenamiento encriptado para proteger las llaves privadas, utilizando esquemas de derivación de claves (KDF) y cifrado autenticado.
+- 🔑 **Secure Key Storage**  
+  Design and implement an encrypted storage system to protect private keys, using key derivation functions (KDF) and authenticated encryption.
 
-- ✍️ **Firma de Transacciones**  
-  Desarrollar el mecanismo para firmar transacciones utilizando criptografía de curva elíptica (Ed25519), garantizando autenticidad e integridad.
+- ✍️ **Transaction Signing**  
+  Develop the mechanism to sign transactions using elliptic curve cryptography (Ed25519), ensuring authenticity and integrity.
 
-- ✅ **Verificación de Firmas**  
-  Implementar la validación criptográfica de transacciones recibidas, incluyendo protección contra ataques de replay mediante sistemas de nonces.
+- ✅ **Signature Verification**  
+  Implement the cryptographic validation of received transactions, including protection against replay attacks using nonce systems.
 
-- 🪙 **Gestión de Direcciones**  
-  Derivar direcciones criptográficas a partir de llaves públicas utilizando funciones hash seguras (SHA-256).
+- 🪙 **Address Management**  
+  Derive cryptographic addresses from public keys using secure hash functions (SHA-256).
 
-### Alcance
+### Scope
 
 > [!NOTE]
-> Este proyecto simula el envío y recepción de transacciones **localmente**, sin requerir conexión a red ni actualizaciones de estado de blockchain. Se enfoca en los aspectos criptográficos fundamentales de una billetera fría.
+> This project simulates sending and receiving transactions **locally**, without requiring a network connection or blockchain state updates. It focuses on the fundamental cryptographic aspects of a cold wallet.
 
-### Conceptos Criptográficos Aplicados
+### Applied Cryptographic Concepts
 
-- 🔑 Generación de pares de llaves asimétricas (Ed25519)
-- 🔒 Cifrado autenticado (AES-256-GCM)
-- 🧂 Derivación de claves con Argon2id
-- 📝 Firma digital y verificación
-- 🛡️ Protección contra ataques de replay
-- 🔗 Canonicalización de datos para integridad
+- 🔑 Asymmetric key pair generation (Ed25519)
+- 🔒 Authenticated encryption (AES-256-GCM)
+- 🧂 Key derivation with Argon2id
+- 📝 Digital signature and verification
+- 🛡️ Protection against replay attacks
+- 🔗 Data canonicalization for integrity
 
 ---
 
-## 🚀 Instalación
+## 🚀 Installation
 
 ```bash
-# Clona este repositorio
-git clone https://github.com/DanielGarcia654/ProyectoFinal_Criptografia.git
+# Clone this repository
+git clone [https://github.com/DanielGarcia654/ProyectoFinal_Criptografia.git](https://github.com/DanielGarcia654/ProyectoFinal_Criptografia.git)
 
-# Navega al directorio del proyecto
+# Navigate to the project directory
 cd ProyectoFinal
 
-# Instala las dependencias
+# Install dependencies
 pip install cryptography customtkinter
 py -m pip install customtkinter packaging
-```
-
-
----
-
-## 💡 Uso
-
-Para instrucciones detalladas de uso, instalación y ejemplos prácticos, consulta la **[Guía de Uso Completa](GUIA_USO.md)**.
-
-### Inicio Rápido
-
-```bash
-# Ejecutar con interfaz gráfica
-python app/main.py
-```
-
-La guía incluye:
-- 📘 Configuración paso a paso
-- 💼 Ejemplos prácticos completos
-- 🔧 Solución de problemas
-- ❓ Preguntas frecuentes
-- 🎯 Mejores prácticas de seguridad
-
----
-
-## 📚 Tecnologías y Herramientas
-
-- **Python 3.x** - Lenguaje de programación principal
-- **cryptography** - Librería de primitivas criptográficas
-  - Ed25519 para firma digital
-  - AES-256-GCM para cifrado autenticado
-  - Argon2id para derivación de claves
-- **CustomTkinter** - Interfaz gráfica moderna
-- **unittest** - Framework de pruebas
-
----
-
-## 📝 Documentación
-
-La documentación completa del proyecto incluye:
-- Análisis de seguridad criptográfica
-- Diagramas de arquitectura
-- Vectores de prueba
-
----
-
-
-<div align="center">
-
-**Universidad Nacional Autónoma de México**  
-**Facultad de Ingeniería**  
-**Criptografía | 2026-1**
-
-</div>
-
-
-
-
